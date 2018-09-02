@@ -1,0 +1,1493 @@
+Return-Path: <b-85wkgbbqg4zs8@mail.marktplaats.nl>
+Delivered-To: g.pathuis@quicknet.nl
+Received: from md6.tb.mail.iss.local ([212.54.34.104])
+	by mc8.tb.mail.iss.local with LMTP id sHHCIAJ7V1vFWgAALmT+sg
+	for <g.pathuis@quicknet.nl>; Tue, 24 Jul 2018 21:16:18 +0200
+Received: from mx15.mnd.mail.iss.as9143.net ([212.54.34.104])
+	by md6.tb.mail.iss.local with LMTP id uNypIAJ7V1ujBQAAgIui0A
+	; Tue, 24 Jul 2018 21:16:18 +0200
+Received: from omx6.marktplaats.nl ([5.255.156.6] helo=marktplaats.nl)
+	by mx15.mnd.mail.iss.as9143.net with esmtps (TLS1.2:ECDHE_RSA_AES_256_GCM_SHA384:256)
+	(Exim 4.86_2)
+	(envelope-from <b-85wkgbbqg4zs8@mail.marktplaats.nl>)
+	id 1fi2nC-0005co-DT
+	for g.pathuis@quicknet.nl; Tue, 24 Jul 2018 21:16:18 +0200
+Received: from relay.prod.comaas.cloud (nsip.mail.fra01.marktplaats.nl [10.34.239.30])
+	by mp-relay001.mail.fra01.marktplaats.nl (Postfix) with ESMTPS id 3C82E7A03BC
+	for <g.pathuis@quicknet.nl>; Tue, 24 Jul 2018 21:16:18 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mail.marktplaats.nl;
+	s=rts; t=1532459778;
+	bh=57PwRJEw6DJUo/QFYklQc4jfvcP3EsW5L2FZf7+G8qg=;
+	h=Mime-Version:Date:Subject:Content-Type:Message-ID:To:From:From;
+	b=AdoIveEILtXG5a9AE0Hemr0ydaIcpDGKKgkrXmJCKtJiAViTdegSPXtm0qJo9aOCn
+	 kapXynzqa3ww3pJNyLfkB6FnbTs0t5Yq7tSRqlUhVhA17QlQvN8T7pKU+BJrZwbylA
+	 Kl+OvjH8Oj82kTDPMYuWl71sUbEmwMMrzqoZU1nw=
+Received: from worker009.comaas-prod.dus1.cloud (worker009.comaas-prod.dus1.cloud [10.39.136.119])
+	by relay.prod.comaas.cloud (Postfix) with ESMTP id 2D71024EDC
+	for <g.pathuis@quicknet.nl>; Tue, 24 Jul 2018 19:16:18 +0000 (UTC)
+Mime-Version: 1.0
+Date: Tue, 24 Jul 2018 19:16:13 +0000
+Subject: RE: Reactie: i-ABS pomp R1150rt (voor revisie)
+X-Comaas-Tenant: mp
+Content-Type: multipart/alternative;
+ boundary="-=Part.86e7a.608a375f220170a3.164cdb88053.916bfc2438dc6242=-"
+Message-ID: <mlbixcoxlq1qkly71ey9vpxvh3nf5mrldqi8o4xn2p359csz7zp@mail.marktplaats.nl>
+References: <9ea617c8-b041-8b53-ac36-b0fdaf60b1f4@quicknet.nl>
+In-Reply-To: <9ea617c8-b041-8b53-ac36-b0fdaf60b1f4@quicknet.nl>
+To: g.pathuis@quicknet.nl
+From: BMW onderdelen via Marktplaats <b-85wkgbbqg4zs8@mail.marktplaats.nl>
+X-Ziggo-spambar: /
+X-Ziggo-spamscore: 0.0
+X-Ziggo-spamreport: CMAE Analysis: v=2.3 cv=S49tP7kP c=1 sm=1 tr=0 a=C8kfxmjuMvt92pU4UFVKZg==:17 a=R9QF1RCXAYgA:10 a=DUWFipX4AAAA:8 a=oOwt9Fk4AAAA:8 a=FdbBLqxNAAAA:8 a=HUo95PU0AmMDvLSBYTUA:9 a=ZXS4NwlPYlDzEQyS:21 a=bMv_Cg0ARBw-4gAM:21 a=RFXaeJp-pwgA:10 a=2FdEnOu-r8gA:10 a=LI2D25GqAAAA:20 a=BE40nVtVDD38DmEUdjwA:9 a=81Ciuat1tGRxtM7J:21 a=5SHJrip5fVvmtDtJ:21 a=6VxkxZPKuN1J-XJx:21 a=_W_S_7VecoQA:10 a=frz4AuCg-hUA:10 a=bhRxflnB2PYBoJI-vfHW:22 a=mSZPRo6KvXSNJbb5UJ1o:22
+ none
+X-Ziggo-Spam-Status: No
+X-Spam-Status: No
+X-Spam-Flag: No
+
+---=Part.86e7a.608a375f220170a3.164cdb88053.916bfc2438dc6242=-
+Content-Type: text/plain; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+Hoi Gerrit,
+Ik werk in Zwolle , Lubeckplein tot 16=2E00 uur=2E
+Als je Parkeergarage Pas de Deux neemt daar heb ik mijn auto staan=2E Bel =
+me een kwartier van  te voren dan zorg ik dat ik er ben=2E
+Tot morgen
+Dick
+0610288105
+
+
+Verzonden met mijn Windows Phone
+________________________________
+Van: Gerrit via Marktplaats<mailto:a-4t2n3x9jqgwx5@mail=2Emarktplaats=2Enl=
+>
+Verzonden: =FD24-=FD7-=FD2018 15:26
+Aan: b-85wkgbbqg4zs8@mail=2Emarktplaats=2Enl<mailto:b-85wkgbbqg4zs8@mail=
+=2Emarktplaats=2Enl>
+Onderwerp: Re: Reactie: i-ABS pomp R1150rt (voor revisie)
+
+
+Beste Dirk,
+
+Prima 100 euro deal,
+
+Wil hem vanavond of morgenmiddag komen halen=2E
+
+Wat is het adres?
+
+Gerrit
+
+0633373680
+
+Am 7/24/2018 um 12:14 PM schrieb BMW onderdelen via Marktplaats:
+Gerrit
+Voor 100 hebben we een deal=2E
+En voor onderdelen is ie perfect=2E
+Dick
+
+Verzonden met mijn Windows Phone
+________________________________
+Van: Gerrit via Marktplaats<mailto:a-4t2n3x9jqgwx5@mail=2Emarktplaats=2Enl=
+>
+Verzonden: =FD24-=FD7-=FD2018 11:28
+Aan: b-85wkgbbqg4zs8@mail=2Emarktplaats=2Enl<mailto:b-85wkgbbqg4zs8@mail=
+=2Emarktplaats=2Enl>
+Onderwerp: Reactie: i-ABS pomp R1150rt (voor revisie)
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Marktplaats=2Enl]<https://www=2Emarktplaats=2Enl/?utm_source=3Dsystemmail=
+&utm_medium=3Demail&utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Seller>
+
+
+
+
+
+
+
+
+
+
+
+
+Beste Marktplaats-gebruiker,
+Je hebt een reactie ontvangen van Gerrit:
+
+
+" Goedemorgen,
+
+Betreft de i-abs unit ik heb precies de zelfde problemen met een k1200RS=
+=2E Miscchien kan ik de unit gebruiken voor reserve delen=2E
+Heb ik de unit voor 100 euro ?
+
+Mvg,
+Gerrit,
+g=2Epathuis@quicknet=2Enl<mailto:g=2Epathuis@quicknet=2Enl>
+
+
+Met vriendelijke groet,
+
+Gerrit "
+
+
+Neem zo snel mogelijk contact op met Gerrit=2E Binnen 24 uur reageren verg=
+root de kans op een succesvolle verkoop=2E
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Over Gerrit
+
+
+
+
+
+
+
+
+
+
+
+        [https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/icon_t=
+ijd=2Egif]
+
+
+11 jaar actief op Marktplaats
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        [i-ABS pomp R1150rt (voor                                      rev=
+isie)] <https://link=2Emarktplaats=2Enl/m1305661139?utm_source=3Dsystemmail=
+&utm_medium=3Demail&utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Seller%29>
+
+
+
+
+        =80 150,00
+
+
+
+
+
+
+
+
+
+
+
+
+        i-ABS pomp R1150rt (voor revisie)
+
+
+
+
+
+
+
+
+
+
+
+        49 x gezien
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Bekijk advertentie<https://link=2Emarktplaats=2Enl/m1305661139?utm=
+_source=3Dsystemmail&utm_medium=3Demail&utm_campaign=3DCA_Buy_B_ASQ_Car_Pri=
+vate_Seller>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Tips van Marktplaats
+
+
+
+
+
+
+
+
+
+
+
+        [https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/beeld_=
+vinkje=2Egif]
+
+
+Gebruik je gezonde verstand: als iets te mooi lijkt om waar te zijn, dan i=
+s dat vaak ook zo=2E
+
+
+
+
+
+        [https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/beeld_=
+vinkje=2Egif]
+
+
+Wees alert bij (ver)kopers uit het buitenland=2E
+
+
+
+
+
+        [https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/beeld_=
+vinkje=2Egif]
+
+
+Verkoop je auto succesvol met de Marktplaats Academie<http://marktplaats=
+=2Eemsecure=2Enet/optiext/optiextension=2Edll?id=3DkKjjnuPGdnwefu2ictpOR2vE=
+Db5demnPR7Y4sz&utm_source=3Dsystemmail+systemmail&utm_medium=3Demail+email&=
+utm_campaign=3Dmpacademie+CA_Buy_B_ASQ_Car_Private_Seller&utm_content=3Dcar=
+smail-TLM>=2E
+
+
+
+
+
+        [https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/beeld_=
+vinkje=2Egif]
+
+
+Gedraagt deze (ver)koper zich verdacht? Meld het aan Marktplaats door deze=
+ e-mail door te sturen naar verdacht@marktplaats=2Enl<mailto:verdacht@markt=
+plaats=2Enl>=2E
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Privacybeleid<http://www=2Emarktplaats=2Enl/i/help/over-marktplaats/voorwa=
+arden-en-privacybeleid/algemene-gebruiksvoorwaarden=2Edot?utm_source=3Dsyst=
+emmail&utm_medium=3Demail&utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Seller>  =
+     |
+Gebruiksvoorwaarden<http://www=2Emarktplaats=2Enl/i/help/over-marktplaats/=
+voorwaarden-en-privacybeleid/algemene-gebruiksvoorwaarden=2Edot?utm_source=
+=3Dsystemmail&utm_medium=3Demail&utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Se=
+ller>         |
+Veilig Handelen<http://www=2Emarktplaats=2Enl/i/help/veilig-en-succesvol/i=
+ndex=2Edot?utm_source=3Dsystemmail&utm_medium=3Demail&utm_campaign=3DCA_Buy=
+_B_ASQ_Car_Private_Seller>
+
+
+
+
+
+
+
+
+
+        Voor je bescherming verloopt deze conversatie via onze server en w=
+orden e-mailadressen afgeschermd<https://help=2Emarktplaats=2Enl/help/belei=
+d_regels/adverteren/adverteren_algemeen/i/e-mailadres-bescherming?utm_sourc=
+e=3Dsystemmail&utm_medium=3Demail&utm_campaign=3DCA_Buy_B_ASQ_Car_Private_S=
+eller>=2E Marktplaats behoudt zich het recht om conversaties te filteren en=
+ te staken om de veiligheid van handelen te vergroten=2E Daarnaast verzamel=
+en en verwerken wij deze conversaties om je gebruikerservaring te optimalis=
+eren=2E Door de conversatie via Marktplaats te versturen, ga je akkoord met=
+ deze voorwaarden=2E
+
+
+
+
+
+---=Part.86e7a.608a375f220170a3.164cdb88053.916bfc2438dc6242=-
+Content-Type: text/html; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-=
+1256">
+<meta content=3D"text/html; charset=3Dwindows-1256">
+</head>
+<body bgcolor=3D"#FFFFFF">
+<div>
+<div style=3D"font-family:Calibri,sans-serif; font-size:11pt">Hoi Gerrit,<=
+br>
+Ik werk in Zwolle , Lubeckplein tot 16=2E00 uur=2E <br>
+Als je Parkeergarage Pas de Deux neemt daar heb ik mijn auto staan=2E Bel =
+me een kwartier van&nbsp; te voren dan zorg ik dat ik er ben=2E
+<br>
+Tot morgen<br>
+Dick<br>
+0610288105<br>
+<br>
+<br>
+Verzonden met mijn Windows Phone</div>
+</div>
+<div dir=3D"ltr">
+<hr>
+<span style=3D"font-family:Calibri,sans-serif; font-size:11pt; font-weight=
+:bold">Van:
+</span><span style=3D"font-family:Calibri,sans-serif; font-size:11pt"><a h=
+ref=3D"mailto:a-4t2n3x9jqgwx5@mail=2Emarktplaats=2Enl">Gerrit via Marktplaa=
+ts</a></span><br>
+<span style=3D"font-family:Calibri,sans-serif; font-size:11pt; font-weight=
+:bold">Verzonden:
+</span><span style=3D"font-family:Calibri,sans-serif; font-size:11pt">=FD2=
+4-=FD7-=FD2018 15:26</span><br>
+<span style=3D"font-family:Calibri,sans-serif; font-size:11pt; font-weight=
+:bold">Aan:
+</span><span style=3D"font-family:Calibri,sans-serif; font-size:11pt"><a h=
+ref=3D"mailto:b-85wkgbbqg4zs8@mail=2Emarktplaats=2Enl">b-85wkgbbqg4zs8@mail=
+=2Emarktplaats=2Enl</a></span><br>
+<span style=3D"font-family:Calibri,sans-serif; font-size:11pt; font-weight=
+:bold">Onderwerp:
+</span><span style=3D"font-family:Calibri,sans-serif; font-size:11pt">Re: =
+Reactie: i-ABS pomp R1150rt (voor revisie)</span><br>
+<br>
+</div>
+<div>
+<p>Beste Dirk, <br>
+</p>
+<p>Prima 100 euro deal,</p>
+<p>Wil hem vanavond of morgenmiddag komen halen=2E</p>
+<p>Wat is het adres?</p>
+<p>Gerrit</p>
+<p>0633373680<br>
+</p>
+<br>
+<div class=3D"moz-cite-prefix">Am 7/24/2018 um 12:14 PM schrieb BMW onderd=
+elen via Marktplaats:<br>
+</div>
+<blockquote type=3D"cite">
+<meta content=3D"text/html; charset=3Dutf-8">
+<meta content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,
+        initial-scale=3D1=2E0">
+<div>
+<div style=3D"font-family:Calibri,sans-serif; font-size:11pt">Gerrit&nbsp;=
+ <br>
+Voor 100 hebben we een deal=2E<br>
+En voor onderdelen is ie perfect=2E<br>
+Dick <br>
+<br>
+Verzonden met mijn Windows Phone</div>
+</div>
+<div dir=3D"ltr">
+<hr>
+<span style=3D"font-family:Calibri,sans-serif; font-size:11pt; font-weight=
+:bold">Van:
+</span><span style=3D"font-family:Calibri,sans-serif; font-size:11pt"><a h=
+ref=3D"mailto:a-4t2n3x9jqgwx5@mail=2Emarktplaats=2Enl">Gerrit via Marktplaa=
+ts</a></span><br>
+<span style=3D"font-family:Calibri,sans-serif; font-size:11pt; font-weight=
+:bold">Verzonden:
+</span><span style=3D"font-family:Calibri,sans-serif; font-size:11pt">=FD2=
+4-=FD7-=FD2018 11:28</span><br>
+<span style=3D"font-family:Calibri,sans-serif; font-size:11pt; font-weight=
+:bold">Aan:
+</span><span style=3D"font-family:Calibri,sans-serif; font-size:11pt"><a h=
+ref=3D"mailto:b-85wkgbbqg4zs8@mail=2Emarktplaats=2Enl">b-85wkgbbqg4zs8@mail=
+=2Emarktplaats=2Enl</a></span><br>
+<span style=3D"font-family:Calibri,sans-serif; font-size:11pt; font-weight=
+:bold">Onderwerp:
+</span><span style=3D"font-family:Calibri,sans-serif; font-size:11pt">Reac=
+tie: i-ABS pomp R1150rt (voor revisie)</span><br>
+<br>
+</div>
+<div><style type=3D"text/css">
+<!--
+html
+	{height:100%;
+	width:100%;
+	margin:0;
+	padding:0}
+body
+	{width:100%!important;
+	height:100%;
+	margin:0;
+	padding:0;
+	background-color:#ffffff}
+=2EReadMsgBody
+	{width:100%}
+=2EExternalClass
+	{width:100%;
+	min-width:610px}
+=2EExternalClass *
+	{line-height:100%}
+table td
+	{border-collapse:collapse;
+	margin:0;
+	padding:0}
+img
+	{display:block;
+	line-height:100%;
+	outline:none;
+	text-decoration:none}
+-->
+</style>
+<table class=3D"mobile-view" cellspacing=3D"0" cellpadding=3D"0" bgcolor=
+=3D"#ffffff" align=3D"center" border=3D"0">
+<tbody>
+<tr>
+<td colspan=3D"3" style=3D"height:10px"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:16px; min-width:16px"><br>
+</td>
+<td valign=3D"middle" align=3D"center" height=3D"17" style=3D"width:566px;=
+ max-width:566px; font-size:11px; line-height:16px; font-family:Arial,Helve=
+tica,sans-serif; color:#666666">
+<br>
+</td>
+<td style=3D"width:16px; min-width:16px"><br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"3" style=3D"height:10px"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mobile-view" cellspacing=3D"0" cellpadding=3D"0" align=3D"=
+center" border=3D"0" style=3D"background-color:#ffffff">
+<tbody>
+<tr>
+<td colspan=3D"3" style=3D"line-height:0px; font-size:0px; height:1px; bac=
+kground-color:#b1c4df">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td valign=3D"top" align=3D"left" style=3D"width:598px">
+<table id=3D"Logo" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" bord=
+er=3D"0">
+<tbody>
+<tr>
+<td valign=3D"middle" align=3D"left" style=3D"border-top:5px solid #EDA566=
+; padding-left:34px; padding-top:10px; padding-bottom:10px">
+<table cellspacing=3D"0" cellpadding=3D"0" align=3D"left" border=3D"0">
+<tbody>
+<tr>
+<td><a href=3D"https://www=2Emarktplaats=2Enl/?utm_source=3Dsystemmail&amp=
+;utm_medium=3Demail&amp;utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Seller" tar=
+get=3D"_blank" style=3D"text-decoration:none"><img title=3D"Marktplaats=2En=
+l" alt=3D"Marktplaats=2Enl" src=3D"https://s=2Emarktplaats=2Ecom/aurora/res=
+/images/html-email/mp-logo=2Epng" height=3D"30" width=3D"163" border=3D"0" =
+style=3D"display:block"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"line-height:0px; font-size:0px; height:1px; ba=
+ckground-color:#a6784b">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#e1e8f5; height:10px"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"height:20px"><br>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mobile-view" cellspacing=3D"0" cellpadding=3D"0" align=3D"=
+center" border=3D"0" style=3D"background-color:#ffffff">
+<tbody>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td style=3D"width:34px; min-width:30px"><br>
+</td>
+<td class=3D"full-width" style=3D"min-width:530px; width:530px">
+<table class=3D"full-width" cellspacing=3D"0" cellpadding=3D"0" align=3D"l=
+eft" border=3D"0" style=3D"width:256px">
+<tbody>
+<tr>
+<td class=3D"full-width" valign=3D"middle" style=3D"width:240px; min-width=
+:240px; font-size:13px; font-family:Arial,Helvetica,serif; color:#4c5254; l=
+ine-height:18px; text-align:left; height:70px">
+<strong>Beste Marktplaats-gebruiker,</strong> </td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"font-size:13px; font-family:Arial,Helvetica,se=
+rif; color:#4c5254; line-height:18px; text-align:left">
+Je hebt een reactie ontvangen van Gerrit: </td>
+</tr>
+<tr>
+<td style=3D"height:20px"><br>
+</td>
+</tr>
+<tr>
+<td valign=3D"middle" style=3D"font-size:15px; font-family:Arial,Helvetica=
+,serif; font-style:italic; color:#21479c; line-height:22px; text-align:left=
+">
+&quot; Goedemorgen, <br>
+<br>
+Betreft de i-abs unit ik heb precies de zelfde problemen met een k1200RS=
+=2E Miscchien kan ik de unit gebruiken voor reserve delen=2E
+<br>
+Heb ik de unit voor 100 euro ? <br>
+<br>
+Mvg, <br>
+Gerrit, <br>
+<a class=3D"moz-txt-link-abbreviated" href=3D"mailto:g=2Epathuis@quicknet=
+=2Enl">g=2Epathuis@quicknet=2Enl</a>
+<br>
+<br>
+<br>
+Met vriendelijke groet, <br>
+<br>
+Gerrit &quot; </td>
+</tr>
+<tr>
+<td style=3D"height:20px"><br>
+</td>
+</tr>
+<tr>
+<td valign=3D"middle" style=3D"font-size:13px; font-family:Arial,Helvetica=
+,serif; color:#4c5254; line-height:18px; text-align:left; padding-bottom:15=
+px">
+Neem zo snel mogelijk contact op met Gerrit=2E Binnen 24 uur reageren verg=
+root de kans op een succesvolle verkoop=2E
+</td>
+</tr>
+<tr>
+<td class=3D"high-on-mobile-only" valign=3D"middle"><br>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"height:40px"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"full-width" cellspacing=3D"0" cellpadding=3D"0" align=3D"r=
+ight" border=3D"0" style=3D"width:256px">
+<tbody>
+<tr>
+<td>
+<table class=3D"full-width" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" style=3D"width:256px; background-color:#fff8d7">
+<tbody>
+<tr>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td colspan=3D"2" class=3D"full-width" valign=3D"middle" style=3D"height:4=
+0px; width:224px; font-size:15px; font-family:Arial,Helvetica,serif; color:=
+#4c5254; line-height:18px; font-weight:bold">
+Over Gerrit </td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td valign=3D"middle" align=3D"left" style=3D"width:30px; height:34px"><im=
+g src=3D"https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/icon_ti=
+jd=2Egif" height=3D"20" width=3D"20" border=3D"0" style=3D"display:block">
+</td>
+<td valign=3D"top">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"height:8px"><br>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"width:194px; font-size:13px; font-family:Arial=
+,Helvetica,serif; color:#000000; line-height:18px; text-align:left">
+11 jaar actief op Marktplaats </td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#b1c4df; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"height:10px; line-height:0px; font-size:0px"><br>
+</td>
+<td style=3D"height:10px; line-height:0px; font-size:0px"><br>
+</td>
+<td style=3D"height:10px; line-height:0px; font-size:0px"><br>
+</td>
+<td style=3D"height:10px; line-height:0px; font-size:0px"><br>
+</td>
+<td style=3D"background-color:#b1c4df; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"6" style=3D"background-color:#b1c4df; height:1px; max-heigh=
+t:1px; line-height:0px; font-size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"6" style=3D"background-color:#ffffff; height:20px; line-hei=
+ght:0px; font-size:0px">
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"full-width" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" style=3D"width:256px">
+<tbody>
+<tr>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td colspan=3D"4" class=3D"full-width" valign=3D"middle" style=3D"width:25=
+4px; min-width:254px">
+<a href=3D"https://link=2Emarktplaats=2Enl/m1305661139?utm_source=3Dsystem=
+mail&amp;utm_medium=3Demail&amp;utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Sel=
+ler%29" target=3D"_blank"><img class=3D"full-width" src=3D"http://i=2Eebayi=
+mg=2Ecom/00/s/NTc2WDEwMjQ=3D/z/Ni8AAOSwvOZbUiRk/$_84=2EJPG" alt=3D"i-ABS po=
+mp R1150rt (voor
+                                    revisie)" width=3D"254" border=3D"0" s=
+tyle=3D"display:block"></a>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"6" style=3D"background-color:#b1c4df; height:1px; line-heig=
+ht:0px; font-size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"6" align=3D"left">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"backgroun=
+d-color:#21479c">
+<tbody>
+<tr>
+<td style=3D"min-width:5px; width:5px"><br>
+</td>
+<td valign=3D"middle" style=3D"height:20px; font-size:16px; font-family:Ar=
+ial,Helvetica,serif; color:#ffffff; line-height:18px; text-align:left; font=
+-weight:bold">
+=80 150,00 </td>
+<td style=3D"min-width:5px; width:5px"><br>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan=3D"6" style=3D"background-color:#b1c4df; height:1px; line-heig=
+ht:0px; font-size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td style=3D"background-color:#f1f4f8; width:15px; min-width:15px"><br>
+</td>
+<td colspan=3D"2" valign=3D"middle" style=3D"background-color:#f1f4f8; hei=
+ght:15px"><br>
+</td>
+<td style=3D"background-color:#f1f4f8; width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td style=3D"background-color:#f1f4f8; width:15px; min-width:15px"><br>
+</td>
+<td colspan=3D"2" class=3D"full-width" valign=3D"middle" style=3D"width:22=
+4px; background-color:#f1f4f8; font-size:13px; font-family:Arial,Helvetica,=
+serif; color:#4c5254; line-height:18px; font-weight:bold">
+i-ABS pomp R1150rt (voor revisie) </td>
+<td style=3D"background-color:#f1f4f8; width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td style=3D"background-color:#f1f4f8; width:15px; min-width:15px"><br>
+</td>
+<td valign=3D"middle" style=3D"background-color:#f1f4f8; font-size:13px; f=
+ont-family:Arial,Helvetica,serif; color:#7b7c7c; line-height:18px; text-ali=
+gn:left">
+<br>
+</td>
+<td valign=3D"middle" style=3D"background-color:#f1f4f8; font-size:13px; f=
+ont-family:Arial,Helvetica,serif; color:#7b7c7c; line-height:18px; text-ali=
+gn:right">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td style=3D"background-color:#f1f4f8; width:15px; min-width:15px"><br>
+</td>
+<td valign=3D"middle" style=3D"background-color:#f1f4f8; font-size:13px; f=
+ont-family:Arial,Helvetica,serif; color:#7b7c7c; line-height:18px; text-ali=
+gn:left">
+49 x gezien </td>
+<td valign=3D"middle" style=3D"background-color:#f1f4f8; font-size:13px; f=
+ont-family:Arial,Helvetica,serif; color:#7b7c7c; line-height:18px; text-ali=
+gn:right">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#b1c4df; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#b1c4df; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td colspan=3D"2" class=3D"full-width" valign=3D"middle" style=3D"width:22=
+4px; background-color:#f1f4f8; font-size:13px; font-family:Arial,Helvetica,=
+serif; color:#4c5254; line-height:18px">
+<a href=3D"https://link=2Emarktplaats=2Enl/m1305661139?utm_source=3Dsystem=
+mail&amp;utm_medium=3Demail&amp;utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Sel=
+ler" style=3D"color:#21479c; text-decoration:underline"><font color=3D"#214=
+79c">Bekijk advertentie</font></a></td>
+<td style=3D"background-color:#f1f4f8; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:1px; line-height:0px; font-s=
+ize:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#b1c4df; height:15px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:15px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:15px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:15px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:15px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"background-color:#b1c4df; height:15px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"6" style=3D"background-color:#b1c4df; height:1px; line-heig=
+ht:0px; font-size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"6" style=3D"background-color:#ffffff; height:20px; line-hei=
+ght:0px; font-size:0px">
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style=3D"width:34px; min-width:30px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mobile-view" cellspacing=3D"0" cellpadding=3D"0" align=3D"=
+center" border=3D"0" style=3D"background-color:#ffffff">
+<tbody>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+<td style=3D"width:34px; min-width:30px"><br>
+</td>
+<td class=3D"full-width" style=3D"min-width:530px; width:530px">
+<table class=3D"full-width" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" style=3D"min-width:530px; width:530px; background-color:#f1f4f8">
+<tbody>
+<tr>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td colspan=3D"2" class=3D"full-width" valign=3D"bottom" style=3D"height:3=
+0px; width:224px; font-size:15px; font-family:Arial,Helvetica,serif; color:=
+#21479c; line-height:18px; font-weight:bold">
+Tips van Marktplaats </td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:1px; max-height:1px; line-he=
+ight:0px; font-size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td valign=3D"middle" align=3D"left" style=3D"min-width:20px; width:20px; =
+height:34px">
+<img src=3D"https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/bee=
+ld_vinkje=2Egif" height=3D"12" width=3D"15" border=3D"0" style=3D"display:b=
+lock">
+</td>
+<td valign=3D"top">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"height:10px"><br>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"width:460px; font-size:13px; font-family:Arial=
+,Helvetica,serif; color:#000000; line-height:18px; text-align:left">
+Gebruik je gezonde verstand: als iets te mooi lijkt om waar te zijn, dan i=
+s dat vaak ook zo=2E
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td valign=3D"middle" align=3D"left" style=3D"min-width:20px; width:20px; =
+height:34px">
+<img src=3D"https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/bee=
+ld_vinkje=2Egif" height=3D"12" width=3D"15" border=3D"0" style=3D"display:b=
+lock">
+</td>
+<td valign=3D"top">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"height:9px"><br>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"width:460px; font-size:13px; font-family:Arial=
+,Helvetica,serif; color:#000000; line-height:18px; text-align:left">
+Wees alert bij (ver)kopers uit het buitenland=2E </td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td valign=3D"middle" align=3D"left" style=3D"min-width:20px; width:20px; =
+height:34px">
+<img src=3D"https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/bee=
+ld_vinkje=2Egif" height=3D"12" width=3D"15" border=3D"0" style=3D"display:b=
+lock">
+</td>
+<td valign=3D"top">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"height:8px"><br>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"width:460px; font-size:13px; font-family:Arial=
+,Helvetica,serif; color:#000000; line-height:18px; text-align:left">
+Verkoop je auto succesvol met de <a href=3D"http://marktplaats=2Eemsecure=
+=2Enet/optiext/optiextension=2Edll?id=3DkKjjnuPGdnwefu2ictpOR2vEDb5demnPR7Y=
+4sz&amp;utm_source=3Dsystemmail+systemmail&amp;utm_medium=3Demail+email&amp=
+;utm_campaign=3Dmpacademie+CA_Buy_B_ASQ_Car_Private_Seller&amp;utm_content=
+=3Dcarsmail-TLM" style=3D"color:#21479c; text-decoration:underline">
+<font color=3D"#21479c">Marktplaats Academie</font></a>=2E </td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td valign=3D"middle" align=3D"left" style=3D"min-width:20px; width:20px; =
+height:34px">
+<img src=3D"https://s=2Emarktplaats=2Ecom/aurora/res/images/html-email/bee=
+ld_vinkje=2Egif" height=3D"12" width=3D"15" border=3D"0" style=3D"display:b=
+lock">
+</td>
+<td valign=3D"top">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"height:8px"><br>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"width:460px; font-size:13px; font-family:Arial=
+,Helvetica,serif; color:#000000; line-height:18px; text-align:left">
+Gedraagt deze (ver)koper zich verdacht? Meld het aan Marktplaats door deze=
+ e-mail door te sturen naar
+<a class=3D"moz-txt-link-abbreviated" href=3D"mailto:verdacht@marktplaats=
+=2Enl">verdacht@marktplaats=2Enl</a>=2E
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style=3D"width:15px; min-width:15px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#f1f4f8"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+<td style=3D"height:10px; line-height:0px; font-size:0px"><br>
+</td>
+<td style=3D"height:10px; line-height:0px; font-size:0px"><br>
+</td>
+<td style=3D"height:10px; line-height:0px; font-size:0px"><br>
+</td>
+<td style=3D"height:10px; line-height:0px; font-size:0px"><br>
+</td>
+<td style=3D"background-color:#f1f4f8; height:10px; line-height:0px; font-=
+size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"6" style=3D"background-color:#f1f4f8; height:1px; max-heigh=
+t:1px; line-height:0px; font-size:0px">
+<br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"6" style=3D"background-color:#ffffff; height:20px; line-hei=
+ght:0px; font-size:0px">
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style=3D"width:34px; min-width:30px"><br>
+</td>
+<td style=3D"width:1px; min-width:1px; background-color:#b1c4df"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mobile-view" cellspacing=3D"0" cellpadding=3D"0" align=3D"=
+center" border=3D"0" style=3D"background-color:#ffffff">
+<tbody>
+<tr>
+<td bgcolor=3D"#b1c4df">
+<table class=3D"FooterHeight" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0">
+<tbody>
+<tr>
+<td colspan=3D"3" height=3D"20" width=3D"600"><br>
+</td>
+</tr>
+<tr>
+<td width=3D"16" style=3D"min-width:16px"><br>
+</td>
+<td valign=3D"middle" bgcolor=3D"#b1c4df" style=3D"width:564px; max-width:=
+564px">
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"full-width">
+<table class=3D"full-width" cellspacing=3D"0" cellpadding=3D"0" align=3D"l=
+eft" border=3D"0" style=3D"font-size:13px; line-height:18px; font-family:Ar=
+ial,Helvetica,sans-serif; color:#21479c">
+<tbody>
+<tr>
+<td class=3D"text3" valign=3D"top" align=3D"left" style=3D"font-size:13px;=
+ line-height:18px; font-family:Arial,Helvetica,sans-serif; color:#21479c">
+<a href=3D"http://www=2Emarktplaats=2Enl/i/help/over-marktplaats/voorwaard=
+en-en-privacybeleid/algemene-gebruiksvoorwaarden=2Edot?utm_source=3Dsystemm=
+ail&amp;utm_medium=3Demail&amp;utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Sell=
+er" target=3D"_blank" style=3D"color:#21479c; font-size:13px; line-height:1=
+8px; text-decoration:none"><font color=3D"#21479c">Privacybeleid</font></a>=
+</td>
+<td class=3D"hide" style=3D"font-size:13px; line-height:18px; font-family:=
+Arial,Helvetica,sans-serif; color:#21479c">
+&nbsp;|&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"full-width" cellspacing=3D"0" cellpadding=3D"0" align=3D"l=
+eft" border=3D"0" style=3D"font-size:13px; line-height:18px; font-family:Ar=
+ial,Helvetica,sans-serif; color:#21479c">
+<tbody>
+<tr>
+<td class=3D"text3" valign=3D"top" align=3D"left" style=3D"font-size:13px;=
+ line-height:18px; font-family:Arial,Helvetica,sans-serif; color:#21479c">
+<a href=3D"http://www=2Emarktplaats=2Enl/i/help/over-marktplaats/voorwaard=
+en-en-privacybeleid/algemene-gebruiksvoorwaarden=2Edot?utm_source=3Dsystemm=
+ail&amp;utm_medium=3Demail&amp;utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Sell=
+er" target=3D"_blank" style=3D"color:#21479c; line-height:18px; text-decora=
+tion:none"><font color=3D"#21479c">Gebruiksvoorwaarden</font></a></td>
+<td class=3D"hide" style=3D"font-size:13px; line-height:18px; font-family:=
+Arial,Helvetica,sans-serif; color:#21479c">
+&nbsp;|&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"full-width" cellspacing=3D"0" cellpadding=3D"0" align=3D"l=
+eft" border=3D"0" style=3D"font-size:13px; line-height:18px; font-family:Ar=
+ial,Helvetica,sans-serif; color:#21479c">
+<tbody>
+<tr>
+<td class=3D"text3" valign=3D"top" align=3D"left" style=3D"font-size:13px;=
+ line-height:18px; font-family:Arial,Helvetica,sans-serif; color:#21479c">
+<a href=3D"http://www=2Emarktplaats=2Enl/i/help/veilig-en-succesvol/index=
+=2Edot?utm_source=3Dsystemmail&amp;utm_medium=3Demail&amp;utm_campaign=3DCA=
+_Buy_B_ASQ_Car_Private_Seller" target=3D"_blank" style=3D"color:#21479c; fo=
+nt-size:13px; line-height:18px; text-decoration:none"><font color=3D"#21479=
+c">Veilig
+ Handelen</font></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width=3D"16" style=3D"min-width:16px"><br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"3" height=3D"20"><br>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mobile-view" cellspacing=3D"0" cellpadding=3D"0" bgcolor=
+=3D"#ffffff" align=3D"center" border=3D"0">
+<tbody>
+<tr>
+<td colspan=3D"3" style=3D"height:10px"><br>
+</td>
+</tr>
+<tr>
+<td style=3D"width:16px; min-width:16px"><br>
+</td>
+<td class=3D"full-width" valign=3D"middle" align=3D"left" style=3D"min-wid=
+th:564px; width:564px; max-width:564px; font-size:11px; line-height:16px; f=
+ont-family:Arial,Helvetica,sans-serif; color:#666666; height:17px">
+Voor je bescherming verloopt deze conversatie via onze server en worden <a=
+ href=3D"https://help=2Emarktplaats=2Enl/help/beleid_regels/adverteren/adve=
+rteren_algemeen/i/e-mailadres-bescherming?utm_source=3Dsystemmail&amp;utm_m=
+edium=3Demail&amp;utm_campaign=3DCA_Buy_B_ASQ_Car_Private_Seller" target=3D=
+"_blank" style=3D"color:#21479c; line-height:18px; text-decoration:none">
+<font color=3D"#21479c">e-mailadressen afgeschermd</font></a>=2E Marktplaa=
+ts behoudt zich het recht om conversaties te filteren en te staken om de ve=
+iligheid van handelen te vergroten=2E Daarnaast verzamelen en verwerken wij=
+ deze conversaties om je gebruikerservaring
+ te optimaliseren=2E Door de conversatie via Marktplaats te versturen, ga =
+je akkoord met deze voorwaarden=2E
+</td>
+<td style=3D"width:16px; min-width:16px"><br>
+</td>
+</tr>
+<tr>
+<td colspan=3D"3" style=3D"height:10px"><br>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</blockquote>
+<br>
+</div>
+</body>
+</html>
+
+---=Part.86e7a.608a375f220170a3.164cdb88053.916bfc2438dc6242=---
+

@@ -1,0 +1,756 @@
+window.aem = window.aem || {};
+
+
+window.aem.setProfilePreferencePopupFlag = function() {
+   CQ_Analytics.PersonalInfoStoreMgr.setProperty("popupViewed",true);
+
+}
+
+window.aem.removeErrorCodeFromURL = function(errorCodeString) {
+
+    var urlWihtoutParameter = location.protocol + '//' + location.host + location.pathname;
+
+    if (errorCodeString != "") {
+        if (typeof(history.pushState) != "undefined") {
+            var obj = {
+                Page: 'homepage',
+                Url: urlWihtoutParameter
+            };
+            history.pushState(obj, obj.Page, obj.Url);
+        } else {
+            console.log("Browser does not support HTML5.");
+        }
+    }
+}
+
+window.aem.fireCRMSamlResponse=function(app, model, callback) {
+
+    if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === true) {
+        gigyaSamlResponse(callback);
+    } else if (model == "login") {
+        gigya.accounts.showScreenSet(aem.login.params);
+    }
+}
+
+window.aem.hideSiteLoader=function() {
+    if ($('#loading').length > 0 && $("#loading").css('display') != "none") {
+        $('#loading').hide();
+    }
+}
+
+window.aem.showSiteLoader=function() {
+    if ($('#loading').length > 0 && $("#loading").css('display') == "none") {
+        $('#loading').show();
+    }
+}
+
+window.aem.actionBeforeRegisterScreenLoad = function() {
+	
+	aem.customGigyaPopupCloseEvent();
+	
+    $('select[name="data.maxim.country"]').on("change", function() {
+        var countryCode = window.aem.getCountryCode($(this).val());
+
+        if (countryCode != "") {
+            if ($('input[name="data.maxim.countrycode"]').length > 0) {
+                $('input[name="data.maxim.countrycode"]').val(countryCode);
+            }
+        }
+    });
+    $('select[name="data.maxim.country"]').change();
+}
+
+window.aem.showProfilePopup = function () {
+	
+	if($('#myMaxDialog').length > 0) {
+		$('#myMaxDialog').modal('hide'); 
+	}
+	aem.showSiteLoader();
+	if(typeof aem != "undefined" && typeof aem.profile != "undefined" && typeof aem.profile.params != "undefined") {
+		gigya.accounts.showScreenSet(aem.profile.params);
+	}
+	
+}
+window.aem.getCountryCode = function(country) {
+    var countryCode = "+1";
+    if (country != "") {
+        jQuery.ajax("https://www.maximintegrated.com/bin/getcountrycode", {
+            data: {
+                country: country
+            },
+            dataType: "text",
+            type: "POST",
+            async: false,
+            global: false,
+            success: function(data, code, jqXHR) {
+                var resJson = JSON.parse(data);
+                if (resJson.country == country && typeof resJson.country_code != "undefined") {
+                    var country_code = resJson.country_code;
+                    if (country_code != "")
+                        countryCode = "+" + country_code;
+                }
+            },
+            error: function() {
+                console.log('System error occured. Not able to load country code. Default +1 will be applied');
+            }
+        })
+    }
+    return countryCode;
+
+}
+
+window.aem.checkUserAccountStatus = function() {
+    var email = $('#gigya-login-form input[name=username]').val();
+    var isAccountActive = true;
+    if (email != "") {
+        jQuery.ajax("https://www.maximintegrated.com/bin/check_gigya_user_status", {
+            data: {
+                gigyaId: email
+            },
+            dataType: "text",
+            type: "POST",
+            async: false,
+            global: false,
+            success: function(data, code, jqXHR) {
+                var resJson = JSON.parse(data);
+                if (resJson.account_status) {
+                    var account_status = resJson.account_status;
+                    if (account_status.isbanned || account_status.isstale || account_status.iszapped) {
+                        if ($('.gigya-screen-dialog').length > -1) {
+                            $('.gigya-screen-dialog').hide();
+                        }
+                        var bootBoxMsg = "";
+                        if (account_status.isbanned) {
+                            bootBoxMsg += 'Your account is banned. Please contact maxim Support';
+                        } else if (account_status.iszapped) {
+                            bootBoxMsg += 'Your account is zapped. Please contact maxim Support';
+                        } else if (account_status.isstale) {
+                            bootBoxMsg += 'Your account is stale. Please contact maxim Support';
+                        }
+                        bootbox.alert(bootBoxMsg);
+                        isAccountActive = false;
+                    }
+                }
+            },
+            error: function() {
+                bootbox.alert('System error occured. Please try again later');
+            }
+        })
+    }
+    return isAccountActive;
+}
+
+/*
+ * Logic to clear aem session if Gigya session is out
+ */
+window.aem.checkAccountInfoResponse = function(response) {
+    if (response.errorCode == 0) {
+        window.aem.loginProvider=response.loginProvider;
+    } else {
+        window.logout();
+    }
+}
+
+window.aem.parseQueryString=function(query) {
+	  var vars = query.split("&");
+	  var query_string = {};
+	  for (var i = 0; i < vars.length; i++) {
+		var pair = [vars[i].substr(0,vars[i].indexOf('=')),vars[i].substr(vars[i].indexOf('=')+1)];
+		
+		// If first entry with this name
+		if (typeof query_string[pair[0]] === "undefined") {
+		  query_string[pair[0]] = decodeURIComponent(pair[1]);
+		  // If second entry with this name
+		} else if (typeof query_string[pair[0]] === "string") {
+		  var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
+		  query_string[pair[0]] = arr;
+		  // If third or later entry with this name
+		} else {
+		  query_string[pair[0]].push(decodeURIComponent(pair[1]));
+		}
+	  }
+	  return query_string;
+
+}
+
+window.aem.showLegalConsentError = function() {
+	
+	if($(".legal-consent-error").length <= 0) {
+		var firstrowLayout = $('form[id="gigya-profile-form"]').first(".gigya-row-layout");
+		var html = "<div class='gigya-row-layout legal-consent-error'>Please accept and consent to continue to use your MyMaxim account.</div>";
+		$(html).insertBefore(firstrowLayout);
+	}
+	
+	var isLegalAgreedElement = $('.gigya-screen-dialog input[name="data.maxim.islegalagreedinprofile"]');
+	var isLegalAgreedElementParent = $('.gigya-screen-dialog input[name="data.maxim.islegalagreedinprofile"]').parent();
+	if(typeof $(isLegalAgreedElement) != "undefined" && !$(isLegalAgreedElementParent).hasClass('gigya-consent-checkbox-error')) {
+		$(isLegalAgreedElementParent).addClass('gigya-consent-checkbox-error');
+	}
+}
+
+window.aem.removeLegalConsentError = function() {
+	var isLegalAgreedElement = $('.gigya-screen-dialog input[name="data.maxim.islegalagreedinprofile"]');
+	var isLegalAgreedElementParent = $('.gigya-screen-dialog input[name="data.maxim.islegalagreedinprofile"]').parent();
+	if(typeof $(isLegalAgreedElement) != "undefined" && $(isLegalAgreedElementParent).hasClass('gigya-consent-checkbox-error')) {
+		$(isLegalAgreedElementParent).removeClass('gigya-consent-checkbox-error');
+	}
+}
+window.aem.actionBeforeProfileScreenLoad = function(event) {
+if(typeof event != "undefined" && event.currentScreen == "gigya-update-profile-screen") {
+	var islegalAgreed = CQ_Analytics.PersonalInfoStoreMgr.getProperty("islegalagreedinprofile");
+		
+	if(islegalAgreed != "" && islegalAgreed != "true") {
+		aem.showLegalConsentError();
+		$('.gigya-screen-dialog .gigya-screen-dialog-close').css("visibility","hidden");
+	} else {
+		aem.customGigyaPopupCloseEvent();
+	}
+	
+	var modifyProfileCountElement = $('#gigya-profile-form input[name="data.maxim.profilemodifycount"]');
+	
+	if(typeof modifyProfileCountElement != "undefined") {
+		var currentCount = "",updatedCount = 1;
+		if(typeof event != "undefined" && typeof event.data != "undefined" && typeof event.data.maxim != "undefined" && typeof event.data.maxim.profilemodifycount != "undefined") {
+			currentCount = event.data.maxim.profilemodifycount;
+		}
+		if(currentCount == "") {
+			$(modifyProfileCountElement).val(updatedCount);
+		} else {
+			$(modifyProfileCountElement).val(parseInt(currentCount)+1);
+		}
+	}
+	
+	
+    if (typeof aem.loginProvider != "undefined" && aem.loginProvider != "site") {
+        if ($('.gigya-screen-dialog .gigya-profile-form').length > 0) {
+            var resetPassword = $('.gigya-screen-dialog .gigya-profile-form').find("[data-switch-screen='gigya-change-password-screen']")
+            if ($(resetPassword).length > 0) {
+                $(resetPassword).css('display', 'none');
+            }
+        }
+    }
+	
+	$('#gigya-profile-form input[name="data.maxim.islegalagreedinprofile"]').on("change", function() {
+		
+		if(this.checked == false) {
+			aem.showLegalConsentError();
+		} else {
+			window.aem.removeLegalConsentError();
+		}
+	});
+	
+    $('#gigya-profile-form select[name="data.maxim.country"]').on("change", function() {
+        var countryCode = window.aem.getCountryCode($(this).val());
+
+        if (countryCode != "") {
+            if ($('#gigya-profile-form div.phone-prefix input').length > 0) {
+                $('#gigya-profile-form input[name="data.maxim.countrycode"]').val(countryCode);
+            }
+        }
+    });
+    $('#gigya-profile-form select[name="data.maxim.country"]').change();
+
+    var engineer = [
+        ['--Select--', 'na'],
+        ['Design Engineer', 'design_engineer'],
+        ['Electrical Engineer', 'electrical_engineer'],
+        ['Hardware Engineer', 'hardware_engineer'],
+        ['Electronic Engineer', 'electronic_engineer']
+    ];
+    var software = [
+        ['--Select--', 'na'],
+        ['Firmware Engineer', 'firmware_engineer'],
+        ['Application Engineer', 'application_engineer']
+    ];
+
+    var ddl1 = $('#gigya-profile-form select[name="data.maxim.jobrole"]')[0];
+    var ddl2 = $('#gigya-profile-form select[name="data.maxim.jobtitle"]')[0];
+
+    $(ddl1).on("change", function() {
+        switch (this.value) {
+            case 'engineer_technical':
+				$(ddl2).parent(".gigya-composite-control-dropdown").css("display","block");
+                var currentValue = $(ddl2).val();
+                ddl2.options.length = 0;
+                for (i = 0; i < engineer.length; i++) {
+                    window.aem.createOption(ddl2, engineer[i][0], engineer[i][1]);
+                }
+				var isCorrectValue = engineer.filter(function (engineer) { return engineer[1] == currentValue }).length > 0 ? true : false;
+				if(isCorrectValue) {
+					$(ddl2).val(currentValue);
+				} else {
+					$(ddl2).val("na");
+				}
+                break;
+            case 'software':
+                $(ddl2).parent(".gigya-composite-control-dropdown").css("display","block");
+                var currentValue = $(ddl2).val();
+                ddl2.options.length = 0;
+                for (i = 0; i < software.length; i++) {
+                    window.aem.createOption(ddl2, software[i][0], software[i][1]);
+                }
+                var isCorrectValue = software.filter(function (software) { return software[1] == currentValue }).length > 0 ? true : false;
+				if(isCorrectValue) {
+					$(ddl2).val(currentValue);
+				} else {
+					$(ddl2).val("na");
+				}
+                break;
+            default:
+                ddl2.value = "na";
+                $(ddl2).parent(".gigya-composite-control-dropdown").css("display","none");
+                break;
+
+        }
+    });
+
+    $('#gigya-profile-form select[name="data.maxim.jobrole"]').change();
+	
+	if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) == true && CQ_Analytics.PersonalInfoStoreMgr.getProperty("email").indexOf('@maximintegrated.com') === -1) {
+		
+    	var socialPluginGrid = $('#gigya-profile-form .gigya-layout-row')[2];
+    	$(socialPluginGrid).append("<div id ='social_mgt'></div>");
+    	var w_params = {
+        version: 2,
+        containerID: "social_mgt",
+        width: "210",
+        height: "50",
+        requiredCapabilities: "login",
+        enabledProviders: "facebook,linkedin,wechat",
+        showTermsLink: "false",
+        showEditLink: "true",
+        hideGigyaLink: "true",
+		customButtons:[]
+    };
+    	gigya.socialize.showAddConnectionsUI(w_params);		
+		
+	}
+}	
+}
+
+window.aem.createOption = function(ddl, text, value) {
+    var opt = document.createElement('option');
+    opt.value = value;
+    opt.text = text;
+    ddl.options.add(opt);
+}
+
+window.aem.gigyaProfileUpdate=function(response) {
+
+    if (response.response.errorCode === 0) {
+
+		if(typeof response.data.maxim.islegalagreedinprofile != "undefined" && response.data.maxim.islegalagreedinprofile == true) {
+	        bootbox.alert("Saved successfully");
+		}else {
+			window.logout();
+			return;
+		}
+		
+        var firstname = response.profile.firstName;
+        var lastname = response.profile.lastName;
+        var companyName = response.data.maxim.company;
+        var roleName = response.data.maxim.jobrole;
+        var roleTitle = response.data.maxim.jobtitle;
+        var phoneNumber = response.data.maxim.phone;
+        var country = response.data.maxim.country;
+        var avatar = response.profile.photoURL;
+		var isLegalAgreedInProfile = response.data.maxim.islegalagreedinprofile;
+		
+		
+
+        var authorizableId = CQ_Analytics.PersonalInfoStoreMgr.getProperty("authorizableId");
+
+        var formData = "authorizableId=" + encodeURIComponent(authorizableId);
+
+        if (typeof firstname != "undefined" && firstname != "") {
+            formData += "&" + encodeURIComponent("profile/givenName") + "=" + encodeURIComponent(firstname);
+        }
+        if (typeof lastname != "undefined" && lastname != "") {
+            formData += "&" + encodeURIComponent("profile/familyName") + "=" + encodeURIComponent(lastname);
+        }
+        if (typeof companyName != "undefined" && companyName != "") {
+            formData += "&" + encodeURIComponent("profile/company") + "=" + encodeURIComponent(companyName);
+        }
+        if (typeof roleName != "undefined" && roleName != "") {
+            formData += "&" + encodeURIComponent("profile/role") + "=" + encodeURIComponent(roleName);
+        }
+        if (typeof roleTitle != "undefined" && roleTitle != "") {
+            formData += "&" + encodeURIComponent("profile/roleTitle") + "=" + encodeURIComponent(roleTitle);
+        }
+        if (typeof phoneNumber != "undefined" && phoneNumber != "") {
+            formData += "&" + encodeURIComponent("profile/phone") + "=" + encodeURIComponent(phoneNumber);
+        }
+        if (typeof country != "undefined" && country != "") {
+            formData += "&" + encodeURIComponent("profile/country") + "=" + encodeURIComponent(country);
+        }
+        if (typeof avatar != "undefined" && avatar != "") {
+            formData += "&" + encodeURIComponent("profile/avatar") + "=" + encodeURIComponent(avatar);
+        }
+		 if (typeof isLegalAgreedInProfile != "undefined" && isLegalAgreedInProfile != "") {
+            formData += "&" + encodeURIComponent("profile/islegalagreedinprofile") + "=" + encodeURIComponent(isLegalAgreedInProfile);
+        }
+
+
+
+        jQuery.ajax({
+            url: "https://www.maximintegrated.com/bin/AccountModificationServlet",
+            type: "POST",
+            contentType: "application/x-www-form-urlencoded",
+   	    crossDomain: true,
+            xhrFields: { withCredentials: true },		
+            data: formData,
+            success: function(data) {
+                if (data.status) {
+                    var country = getUrlCountry();
+                    if (country == 'en' || country == 'jp') {
+                        $('.myMaximSpan').html(firstname + " " + lastname).attr("style", "text-transform:capitalize");
+                    } else {
+                        $('.myMaximSpan').html(lastname + " " + firstname).attr("style", "text-transform:capitalize");
+                    }
+
+                } else
+                    alert(data.error);
+            },
+            error: function(jqXHR, exception) {
+                if (jqXHR.status === 0) {
+                    alert("Not connect. Verify Network.");
+                } else if (jqXHR.status == 404) {
+                    alert("Requested page not found. [404]");
+                } else if (jqXHR.status == 500) {
+                    alert("Internal Server Error [500].");
+                } else if (exception === 'parsererror') {
+                    alert("Requested JSON parse failed.");
+                } else if (exception === 'timeout') {
+                    alert("Time out error.");
+                } else if (exception === 'abort') {
+                    alert("Ajax request aborted.");
+                } else {
+                    alert("Uncaught Error: " + jqXHR.responseText);
+                }
+            }
+        });
+    }
+
+
+}
+
+
+window.aem.customGigyaPopupCloseEvent = function() {
+	$('body #gigya-screen-dialog-page-overlay').click(function(event) {
+				if ($(this).parent('.gigya-screen-dialog').length > -1) {
+					$(this).parent('.gigya-screen-dialog').hide();
+				}
+				
+				aem.hideSiteLoader();
+	});
+	
+	
+
+}
+
+aem.register = aem.register || {};
+aem.login = aem.login || {};
+aem.resetpassword = aem.resetpassword || {};
+aem.profile = aem.profile || {};
+
+aem.register.params = {
+    screenSet: 'Default-RegistrationLogin',
+    startScreen: 'gigya-register-screen',
+	onHide: aem.hideSiteLoader,
+    onAfterScreenLoad: aem.actionBeforeRegisterScreenLoad,
+};
+
+aem.login.params = {
+    screenSet: 'Default-RegistrationLogin',
+	onAfterScreenLoad: aem.customGigyaPopupCloseEvent,
+	onHide: aem.hideSiteLoader,
+};
+
+aem.resetpassword.params = {
+    screenSet: 'Default-RegistrationLogin',
+    startScreen: 'gigya-reset-password-screen',
+	onAfterScreenLoad: aem.customGigyaPopupCloseEvent,
+	onHide: aem.hideSiteLoader,
+};
+    
+aem.profile.params = {
+        screenSet: 'Default-ProfileUpdate',
+		startScreen:'gigya-update-profile-screen',
+        onAfterSubmit: window.aem.gigyaProfileUpdate,
+        onAfterScreenLoad: window.aem.actionBeforeProfileScreenLoad,
+		onHide: aem.hideSiteLoader,
+};
+
+var isProfilePage = $('#gigya-aem-update-profile').length > 0 ? true : false;
+
+if(CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) == "true" && (CQ_Analytics.PersonalInfoStoreMgr.getProperty("islegalagreedinprofile")!= "" && CQ_Analytics.PersonalInfoStoreMgr.getProperty("islegalagreedinprofile") != "true")) {
+	isProfilePage = true;
+}
+
+if (!aem.gigyaErrorCodes) {
+    aem.gigyaErrorCodes = new Map();
+}
+
+aem.gigyaErrorCodes.set('403002', CQ.I18n.get("403002"));
+aem.gigyaErrorCodes.set('403041', CQ.I18n.get("403041"));
+aem.gigyaErrorCodes.set('403120', CQ.I18n.get("403120"));
+
+window.__gigyaConf = window.__gigyaConf || {};
+
+window.__gigyaConf.customLang = {
+ password_must_contain_at_least: CQ.I18n.get("gigyaValidationsPasswordRestriction1"),
+	account_is_disabled: CQ.I18n.get("403041"),
+    num_characters_total: CQ.I18n.get("gigyaValidationsPasswordRestriction2"),
+    password_does_not_meet_complexity_requirements: ' ',
+	this_field_is_required: CQ.I18n.get("thisfieldrequiredText"),
+    email_address_is_invalid: CQ.I18n.get("gigyaValidationsEmailNotValid"),
+	edit: CQ.I18n.get("edit"),
+	profilePhoto_update: CQ.I18n.get("Update-Photo")
+};
+
+window.__gigyaConf.validation = {
+    // formData contains all information user has entered
+    // eventType is either "change" or "keypress"
+    // callback is optional, you can use it for asynchronous validation or just use return
+    'gigya-register-screen': function(formData, eventType, callback) {
+        var errors = {};
+        // Override default error message for required fields.
+        if (formData['email'] === '') {
+            errors['email'] = CQ.I18n.get("gigyaValidationsEmailRequired");
+        }
+        if (formData['email'] != '' && formData['email'].toLowerCase().endsWith("@maximintegrated.com")) {
+            errors['email'] = CQ.I18n.get("gigyaValidationsInternalUser");
+        }
+        if (formData['profile.firstName'] === '') {
+            errors['profile.firstName'] = CQ.I18n.get("gigyaValidationsFirstNameRequired");
+        }
+        if (formData['profile.lastName'] === '') {
+            errors['profile.lastName'] = CQ.I18n.get("gigyaValidationsLastNameRequired");
+        }
+        if (formData['data.maxim.company'] === '') {
+            errors['data.maxim.company'] = CQ.I18n.get("gigyaValidationsCompanyRequired");
+        }
+
+        var phoneno = /^[1-9][0-9]{6,15}$/;
+        if (formData['data.maxim.phone'] != '' && !formData['data.maxim.phone'].match(phoneno)) {
+            errors['data.maxim.phone'] = CQ.I18n.get("gigyaValidationsPhoneNumberRestriction");
+        }
+
+        var extension = /^[0-9]{1,10}$/;
+        if (formData['data.maxim.phoneextension'] != '' && !formData['data.maxim.phoneextension'].match(extension)) {
+            errors['data.maxim.phoneextension'] = CQ.I18n.get("gigyaValidationsExtensionRestriction");
+        }
+
+
+        return errors;
+    },
+    'gigya-login-screen': function(formData, eventType, callback) {
+        var errors = {};
+
+        if (formData['loginID'] === '') {
+            errors['loginID'] = CQ.I18n.get("gigyaValidationsEmailRequired");
+        }
+        if (formData['loginID'] != '' && formData['loginID'].toLowerCase().endsWith("@maximintegrated.com")) {
+            errors['loginID'] = CQ.I18n.get("gigyaValidationsLoginInternalUser");
+        }
+
+        return errors;
+    },
+    'gigya-update-profile-screen': function(formData, eventType, callback) {
+        var errors = {};
+        if (formData['email'] === '') {
+            errors['email'] = CQ.I18n.get("gigyaValidationsEmailRequired");
+        }
+        if (formData['profile.firstName'] === '') {
+            errors['profile.firstName'] = CQ.I18n.get("gigyaValidationsFirstNameRequired");
+        }
+        if (formData['profile.lastName'] === '') {
+            errors['profile.lastName'] = CQ.I18n.get("gigyaValidationsLastNameRequired");
+        }
+        if (formData['data.maxim.company'] === '') {
+            errors['data.maxim.company'] = CQ.I18n.get("gigyaValidationsCompanyRequired");
+        }
+
+        var phoneno = /^[1-9][0-9]{6,15}$/;
+        if (formData['data.maxim.phone'] != '' && !formData['data.maxim.phone'].match(phoneno)) {
+            errors['data.maxim.phone'] = CQ.I18n.get("gigyaValidationsPhoneNumberRestriction");
+        }
+
+        /*
+			  var extension = /^[0-9]{1,10}$/;
+			  if(formData['data.maxim.phoneextension'] != '' && !formData['data.maxim.phoneextension'].match(extension)) {
+				  errors['data.maxim.phoneextension'] = CQ.I18n.get("gigyaValidationsExtensionRestriction");
+			  } */
+
+        return errors;
+    }
+};
+
+$(window).on("load", function() {
+
+    /* 
+     * 	First step is to check whether gigya session is active or not
+     */
+    if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) == true) {
+        gigya.accounts.getAccountInfo({
+            callback: window.aem.checkAccountInfoResponse
+        });
+    }
+
+    //Logic for AEM CRM Call
+	window.aem.loginProvider = "";
+	
+	
+    var requestParameters = window.aem.parseQueryString(decodeURIComponent(location.search.substring(1)));
+    var app = requestParameters.app;
+    var model = requestParameters.model;
+    var callback = requestParameters.callback;
+    var currentDomain = window.location.host;
+    if (typeof callback == "undefined" || callback == "") {
+        if (typeof requestParameters.resource != "undefined" && requestParameters.resource != "") {
+            callback = requestParameters.resource;
+        } else if (document.referrer != "" && app == "legacy") {
+			callback = document.referrer;
+		}else {
+            callback = window.location.href;
+        }
+    } else {
+		callback = decodeURIComponent(callback);
+	}
+    var errorCodeString = requestParameters.errorCode;
+    var errorCode = "";
+    var isPopupShown = false;
+
+    if (typeof errorCodeString != "undefined" && errorCodeString != "") {
+        errorCode = errorCodeString.substr(0, errorCodeString.indexOf(' '));
+        if (typeof aem.gigyaErrorCodes != "undefined" && aem.gigyaErrorCodes.has(errorCode)) {
+            bootbox.alert(aem.gigyaErrorCodes.get(errorCode));
+        }
+        window.aem.removeErrorCodeFromURL(errorCodeString);
+    }
+    if (typeof app != "undefined" && typeof model != "undefined") {
+
+        if (app == "crm") {
+            if (model == "login") {
+                if (typeof callback != "undefined") {
+                    window.aem.fireCRMSamlResponse(app, model, callback);
+                    isPopupShown = true;
+                }
+            }
+
+            if (model == "logout" && CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === true) {
+                if (typeof callback != "undefined") {
+                    window.logout(callback);
+                } else {
+                    window.logout();
+                }
+            }
+        }
+        if (app == "web") {
+            if (model == "pwdreset") {
+                if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === false) {
+                    isPopupShown = true;
+                    gigya.accounts.showScreenSet(aem.resetpassword.params);
+                }
+            }
+
+            if (model == "login") {
+                if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === false) {
+                    isPopupShown = true;
+                    gigya.accounts.showScreenSet(aem.login.params);
+                } else if (typeof callback != "undefined") {
+                    window.open(callback, "_self");
+                }
+            }
+
+            if (model == "register") {
+                if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === false) {
+                    isPopupShown = true;
+                    gigya.accounts.showScreenSet(aem.register.params);
+                }
+            }
+			if(model == "profile") {
+                if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === true) {
+                    isPopupShown = true;
+                    gigya.accounts.showScreenSet(aem.profile.params);
+                }
+            }
+
+            if (model == "logout" && CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === true) {
+                if (typeof callback != "undefined") {
+                    window.logout(callback);
+                } else {
+                    window.logout();
+                }
+            }
+        }
+		
+		if (app == "legacy") {
+			if (model == "login") {
+					if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === false) {
+						isPopupShown = true;
+						gigya.accounts.showScreenSet(aem.login.params);
+					} else if (typeof callback != "undefined") {
+						window.open(callback, "_self");
+					}
+			}
+			if (model == "register") {
+                if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === false) {
+                    isPopupShown = true;
+                    gigya.accounts.showScreenSet(aem.register.params);
+                }
+            }
+			
+			if(model == "profile") {
+                if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === true) {
+                    isPopupShown = true;
+                    gigya.accounts.showScreenSet(aem.profile.params);
+                }
+            }
+		}
+    }
+    if (isPopupShown) {
+        window.aem.showSiteLoader();
+    }
+
+    if (CQ_Analytics.PersonalInfoStoreMgr.getProperty("isLoggedIn", true) === true) {
+        var loginCount = CQ_Analytics.PersonalInfoStoreMgr.getProperty("loginCount");
+		var email = CQ_Analytics.PersonalInfoStoreMgr.getProperty("email");
+		var popupFlag = CQ_Analytics.PersonalInfoStoreMgr.getProperty("popupViewed");
+        /*if (loginCount == "4" && email.indexOf('@maximintegrated.com') == -1) {
+			aem.showSiteLoader();
+            gigya.accounts.showScreenSet({
+                screenSet: 'Default-RegistrationLogin',
+                startScreen: 'progressive-profiling-2',
+                onAfterSubmit: window.aem.increaseLoginCount,
+                onHide: window.aem.increaseLoginCount,
+				onAfterScreenLoad: aem.customGigyaPopupCloseEvent
+            });
+        }*/
+		if(loginCount == "0" && email.indexOf('@maximintegrated.com') == -1 && ( popupFlag == "" || (popupFlag != "" && popupFlag == false))) {
+			window.aem.showProfilePopup();
+			window.aem.setProfilePreferencePopupFlag();
+
+		}
+		if(loginCount == "1" && email.indexOf('@maximintegrated.com') == -1 && ( popupFlag == "" || (popupFlag != "" && popupFlag == false))) {
+			if($('#preferencesModal').length > 0) {
+				window.aem.showSiteLoader();
+				$('#preferencesModal').modal("show");
+				window.aem.hideSiteLoader();
+				window.aem.setProfilePreferencePopupFlag();
+				
+			}
+		}
+    }
+	
+
+	if(isProfilePage) {
+		window.aem.showProfilePopup();	
+	}
+	
+	$('#myMaximLoginDiv').click(function() {
+		window.aem.showSiteLoader();
+	});
+});
+
+
